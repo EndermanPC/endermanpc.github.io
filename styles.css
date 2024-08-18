@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    background: linear-gradient(135deg, #0778B5, #0710B5);
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
     color: #f0f0f0;
-
     font-family: 'Roboto', sans-serif;
-
     margin: 0;
     padding: 0;
 }
@@ -13,14 +11,11 @@ body {
 .container {
     width: 85%;
     max-width: 1000px;
-
     margin: 40px auto;
     padding: 30px;
-
     background: rgba(0, 0, 0, 0.7);
-
+    border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
-
     backdrop-filter: blur(10px);
 }
 
@@ -28,25 +23,21 @@ h1 {
     color: #61dafb;
     text-align: center;
     font-size: 2.5em;
-    
-    text-transform: uppercase;
-    
     margin-bottom: 20px;
+    text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 ul {
     list-style-type: none;
-
     padding: 0;
 }
 
 ul li {
     margin: 15px 0;
     padding: 10px;
-
     background: rgba(255, 255, 255, 0.1);
-
+    border-radius: 8px;
     transition: background 0.3s ease;
 }
 
@@ -66,31 +57,26 @@ ul li strong {
 
 ul li a {
     color: #61dafb;
-
     text-decoration: none;
     font-weight: 700;
-
     transition: color 0.3s ease;
 }
 
 ul li a:hover {
     color: #ffa726;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .github-stats img {
     width: 100%;
     margin-top: 30px;
-
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .github-stats img:hover {
     transform: scale(1.05);
-
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 }
 
