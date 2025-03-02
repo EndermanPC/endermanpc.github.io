@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bùi Nguyễn Tấn Sang</title>
-    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/88751712?v=4">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Page</title>
+<style>
+    body {
+        background: linear-gradient(135deg, #3EC7E0, #DB74FF);
+        background-size: 400% 400%;
+        animation: gradientMove 10s ease infinite;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 0;
+        height: 100vh;
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .profile-container {
+        background-color: #18191c;
+        border-radius: 16px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        max-width: 500px;
+        text-align: center;
+        padding: 30px;
+        color: #fff;
+        position: relative;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #282b30;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .profile-img:hover {
+        border-color: #7289da;
+        transform: scale(1.05);
+    }
+
+    .profile-name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #fff;
+    }
+
+    .profile-info {
+        color: #b9bbbe;
+        margin-bottom: 20px;
+    }
+
+    .social-links a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #b9bbbe;
+        transition: color 0.3s;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .social-links a:hover {
+        color: #7289da;
+    }
+
+    .social-links a i {
+        margin-right: 5px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Hello! 👋</h1>
-        <ul>
-            <li><strong>🔭 Currently working at:</strong> Lithicsoft Organization</li>
-            <li><strong>🌱 Studying at:</strong> High School (15 years old)</li>
-            <li><strong>🤔 Seeking help with:</strong> Arduino (Please, my brain is fried—any help is appreciated!)</li>
-            <li><strong>💬 Ask me about:</strong>
-                <ul>
-                    <li>🧠 CNN (Convolutional Neural Networks)</li>
-                    <li>🧠 LLM (Large Language Models)</li>
-                </ul>
-            </li>
-            <li><strong>💻 Skills:</strong>
-                <ul>
-                    <li><strong>Best:</strong>
-                        <ul>
-                            <li><img src="https://img.icons8.com/color/24/000000/c-plus-plus-logo.png" alt="C++"> C++</li>
-                            <li><img src="https://img.icons8.com/color/24/000000/python.png" alt="Python"> Python</li>
-                            <li><img src="https://img.icons8.com/color/24/000000/c-sharp-logo.png" alt="C#"> C#</li>
-                        </ul>
-                    </li>
-                    <li><strong>Also Know:</strong>
-                        <ul>
-                            <li><img src="https://img.icons8.com/color/24/000000/javascript.png" alt="JavaScript"> JavaScript</li>
-                            <li><img src="https://img.icons8.com/color/24/000000/css3.png" alt="CSS"> CSS</li>
-                            <li><img src="https://img.icons8.com/color/24/000000/html-5.png" alt="HTML"> HTML</li>
-                            <li><img src="https://img.icons8.com/officel/24/000000/php-logo.png" alt="PHP"> PHP</li>
-                            <li><img src="https://img.icons8.com/ios/24/000000/sql.png" alt="SQL"> SQL</li>
-                            <li><img src="https://img.icons8.com/color/24/000000/typescript.png" alt="TypeScript"> TypeScript</li>
-                        </ul>
-                    </li>
-                    <li><strong>Tools:</strong>
-                        <ul>
-                            <li><img src="https://img.icons8.com/color/24/000000/sublime-text.png" alt="Sublime Text"> Sublime Text</li>
-                            <li><img src="https://img.icons8.com/color/24/000000/windows-10.png" alt="Windows"> Windows 10</li>
-                            <li><img src="https://img.icons8.com/?size=24&id=364&format=png&color=000000" alt="Compiler"> Compilers for all my languages</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><strong>🌐 Technologies:</strong>
-                <ul>
-                    <li>🤖 Machine Learning</li>
-                    <li>🌐 Web Development</li>
-                    <li>📱 Mobile Development</li>
-                    <li>💻 Desktop (Linux, Windows) Development</li>
-                </ul>
-            </li>
-            <li><strong>🚀 Current Projects:</strong>
-                <ul>
-                    <li>🔍 Neutron Search Engine</li>
-                    <li>🎓 Trainer Studio (AI Training Program)</li>
-                </ul>
-            </li>
-            <li><strong>🌐 Links:</strong>
-                <ul>
-                    <li><img src="https://img.icons8.com/ios-glyphs/24/000000/github.png" alt="GitHub"> <a href="https://github.com/EndermanPC" target="_blank">GitHub</a></li>
-                    <li><img src="https://img.icons8.com/?size=24&id=sop9ROXku5bb&format=png&color=000000" alt="Huggingface"> <a href="https://huggingface.co/AnthonyErosion" target="_blank">Huggingface</a></li>
-                    <li><img src="https://img.icons8.com/ios-filled/24/000000/facebook.png" alt="Facebook"> <a href="https://www.facebook.com/twentyzr/" target="_blank">Facebook</a></li>
-                    <li><img src="https://img.icons8.com/color/24/000000/discord-new-logo.png" alt="Discord"> Discord: twentyzr</li>
-                </ul>
-            </li>
-            <li><strong>🎯 Goals:</strong> I aim to create a big project that helps many people, is easy to use, and is either free or low-cost.</li>
-            <li><strong>🎵 Hobbies:</strong>
-                <ul>
-                    <li>🎮 Coding</li>
-                    <li>🕹️ Playing esports games</li>
-                    <li>🎹 Attempting to play piano (not good)</li>
-                    <li>🎬 Watching films</li>
-                </ul>
-            </li>
-            <li><strong>😄 Pronouns:</strong> He/Him</li>
-            <li><strong>⚡ Fun fact:</strong> Despite all the tech talk, I sometimes feel like I don't know how to code!</li>
-        </ul>
-        <div class="github-stats">
-            <img src="https://github-readme-stats.vercel.app/api?username=EndermanPC&show_icons=true&theme=github_dark" alt="GitHub Stats">
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EndermanPC&layout=compact&theme=github_dark" alt="Top Languages">
-            <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=EndermanPC&theme=github_dark" alt="Profile Details">
-            <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=EndermanPC&theme=github_dark" alt="Repos Per Language">
-            <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=EndermanPC&theme=github_dark" alt="Most Commit Language">
-            <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=EndermanPC&theme=github_dark" alt="Stats">
-            <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=EndermanPC&utcOffset=7&theme=github_dark" alt="Productive Time">
-        </div>
+<div class="profile-container">
+    <img src="https://avatars.githubusercontent.com/u/88751712?s=400&u=9e270d17c3034bf256db8f921c7808e33ef935b6&v=4" alt="Profile Picture" class="profile-img">
+    <h2 class="profile-name">ZEanth</h2>
+    <p class="profile-info">Bùi Nguyễn Tấn Sang · He/Him · Quang Nam, Vietnam</p>
+    <p class="profile-info">Hi! I'm ZEanth, a Vietnamese student, currently studying at Nguyen Binh Khiem High School for the Gifted - Quang Nam. I like coding, listening to music and playing badminton in my free time.</p>
+    <div class="social-links">
+        <a href="https://discord.gg/dNQunYaXrX"><i class="fab fa-discord"></i>Discord</a>
+        <a href="https://github.com/EndermanPC"><i class="fab fa-github"></i>GitHub</a>
+        <a href="https://www.facebook.com/I1Miss1Her"><i class="fab fa-facebook"></i>Facebook</a>
+        <a href="https://huggingface.co/AnthonyErosion"><i class="fab fa-hubspot"></i>Hugging Face</a>
     </div>
+</div>
 </body>
+
 </html>
